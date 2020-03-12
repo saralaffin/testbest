@@ -1,0 +1,32 @@
+.footer__bar {
+  height: 8vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.footer__image img {
+  height: 60px;
+}
+
+.footer__links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.footer__links {
+  margin: 0 20px;
+}
+
+.footer__bar a {
+  text-decoration: none;
+  color: white;
+}

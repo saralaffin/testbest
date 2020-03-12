@@ -1,0 +1,134 @@
+.button-large {
+  padding: 10px 50px;
+}
+button {
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.button-primary {
+  background-color: #0069d9;
+  color: white;
+  border: #0069d9;
+}
+.button-primary:hover {
+  background-color: #2678a8ea;
+}
+.button-primfade {
+  background-color: #2678a8ea;
+  color: white;
+}
+.button-primshad {
+  background-color: #bbcfe4;
+  color: #0069d9;
+}
+.button-lprimshad {
+  padding: 10px 50px;
+  background-color: #bbcfe4;
+  color: #0069d9;
+}
+.button-lprimfade {
+  padding: 10px 50px;
+  background-color: #2678a8ea;
+  color: white;
+}
+.button-primeoutline {
+  background-color: none;
+  border-radius: 2px;
+  border-color: #0069d9;
+  color: #0069d9;
+}
+.button-lprimeoutline {
+  padding: 10px 50px;
+  background-color: none;
+  border-radius: 2px;
+  border-color: #0069d9;
+}
+.button-warning {
+  background-color: orange;
+  color: white;
+}
+.button-warning:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
+.button-waroutline {
+  background-color: none;
+  border-radius: 2px;
+  border-color: orange;
+  color: orange;
+}
+.button-warfade {
+  background-color: rgb(231, 186, 39);
+  color: white;
+}
+.button-warnshad {
+  background-color: rgb(243, 208, 144);
+  color: rgb(194, 129, 8);
+}
+.button-danger {
+  background-color: #ff0041;
+  color: white;
+}
+.button-danger:hover {
+  background-color: darkred;
+}
+.button-danshad {
+  background-color: #eea0b4;
+  color: #ff0041;
+}
+.button-danfade {
+  background-color: #ff0040b0;
+  color: white;
+}
+.button-dangoutline {
+  background-color: none;
+  color: #ff0041;
+  border-radius: 2px;
+  border-color: #ff0041;
+}
+.button-success {
+  background-color: #0ad00a;
+  color: white;
+}
+.button-success:hover {
+  background-color: #71c271;
+}
+.button-sucshad {
+  background-color: #0ad00a60;
+  color: #115211;
+}
+.button-sucfade {
+  background-color: #27ec90;
+  color: white;
+}
+.button-sucoutline {
+  background-color: none;
+  color: #00d300;
+  border-radius: 2px;
+  border-color: #00d300;
+}
+.button-default {
+  background-color: black;
+  color: white;
+}
+.button-default:hover {
+  background-color: darkslategray;
+}
+.button-defoutline {
+  background-color: none;
+  border-radius: 2px;
+  border-color: black;
+  color: black;
+}
+.button-defshad {
+  background-color: rgb(172, 164, 0.3);
+  color: black;
+}
+.button-defade {
+  background-color: rgb(65, 60, 60);
+  color: white;
+}
+.button-submit {
+  color: white;
+}

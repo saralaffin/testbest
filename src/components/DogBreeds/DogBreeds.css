@@ -1,0 +1,71 @@
+.DogBreeds___container {
+  height: 80vh;
+  width: 15%;
+  overflow-y: scroll;
+  color: white;
+  float: right;
+  box-shadow: -5px 5px #a80000;
+}
+
+.DogBreeds {
+  height: 100%;
+  width: 100%;
+}
+.DogBreeds__breed {
+  line-height: 2;
+  border-bottom: 1px solid white;
+  background-color: #770f05;
+  padding-left: 10px;
+}
+
+.DogBreeds__breed:hover {
+  background-color: rgba(0, 0, 0, 0.769);
+  font-size: 2vh;
+}
+
+.DogBreeds___container a {
+  text-decoration: none;
+  color: white;
+}
+
+.DogBreeds__info-container {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.DogBreeds-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.DogBreeds__info-title {
+  padding-top: 5%;
+  font-size: 4vh;
+}
+
+.DogBreeds__info-key {
+  padding-right: 20px;
+  text-align: left;
+  color: black;
+}
+
+.DogBreeds__info-property {
+  line-height: 3em;
+  border-bottom: 1px solid #a80000;
+  text-align: right;
+  color: #d4af37;
+}
+
+.DogBreeds__container-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+  height: 300px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.194);
+  color: white;
+  border-radius: 10px;
+}

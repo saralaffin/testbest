@@ -1,0 +1,11 @@
+.like__div {
+  background-image: url("logo_border.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 45px;
+  padding: 1px;
+}
+.like__div-active {
+  background-image: url("logo.png");
+}
