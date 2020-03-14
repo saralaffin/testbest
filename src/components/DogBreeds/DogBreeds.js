@@ -217,7 +217,7 @@ class DogBreeds extends Component {
   render() {
     if (this.state.breeds) {
       return (
-        <div>
+        <div className="DogBreeds">
           <div className="DogBreeds___container">{this.populateBreeds()}</div>
           <div className="DogBreeds__info-container">{this.renderStats()}</div>
         </div>

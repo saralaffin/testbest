@@ -23,9 +23,10 @@ button {
   color: #0069d9;
 }
 .button-lprimshad {
-  padding: 10px 50px;
-  background-color: #bbcfe4;
-  color: #0069d9;
+  padding: 10px 30px;
+  background-color: #770f05;
+  color: white;
+  border-radius: 5px;
 }
 .button-lprimfade {
   padding: 10px 50px;

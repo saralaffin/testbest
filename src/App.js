@@ -35,7 +35,7 @@ class App extends Component {
             exact
             render={routerProps => <AddPet {...routerProps} />}
           />
-            <Route
+          <Route
             path="/pet/:id"
             exact
             render={routerProps => <PetProfile {...routerProps} />}

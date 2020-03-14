@@ -1,10 +1,10 @@
 .DogBreeds___container {
   height: 80vh;
-  width: 15%;
+  width: 20%;
   overflow-y: scroll;
   color: white;
   float: right;
-  box-shadow: -5px 5px #a80000;
+  box-shadow: -5px 5px #770f057c;
 }
 
 .DogBreeds {
@@ -19,7 +19,7 @@
 }
 
 .DogBreeds__breed:hover {
-  background-color: rgba(0, 0, 0, 0.769);
+  background-color: #770f05bf;
   font-size: 2vh;
 }
 
@@ -62,10 +62,89 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vh;
+  font-size: 2vh;
   height: 300px;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.194);
+  max-width: 300px;
+  background-color: #770f05bb;
   color: white;
   border-radius: 10px;
+  box-shadow: 3px 3px #770f05;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .DogBreeds__breed {
+    font-size: 1vh;
+  }
+
+  .DogBreeds__breed:hover {
+    font-size: 1.5vh;
+  }
+
+  .DogBreeds__info-container {
+    width: 700px;
+    margin: 0 auto;
+    padding-right: 20%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .DogBreeds__info-container {
+    width: 500px;
+    margin: 0 auto;
+    padding-right: 20%;
+    text-align: center;
+    font-size: 1vh;
+  }
+  .DogBreeds___container {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .DogBreeds__info-title {
+    padding-top: 5%;
+    font-size: 2.5vh;
+  }
+
+  .DogBreeds__info-container {
+    width: 200px;
+    height: 100%;
+    overflow-y: scroll;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 0;
+    font-size: 1vh;
+  }
+  .DogBreeds___container {
+    height: 40vh;
+  }
+  .DogBreeds__container-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vh;
+    height: 150px;
+    max-width: 150px;
+    background-color: #770f05bb;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px #770f05;
+    padding: 10px;
+  }
+  .DogBreeds-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .DogBreeds__info-container {
+    width: 150px;
+    height: 100%;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding-right: 0;
+    text-align: center;
+    font-size: 1vh;
+  }
 }

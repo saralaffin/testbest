@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../../App.css";
 import "./Card.css";
+import "../Button/Button.css";
 import Like from "../Like/Like";
+import Button from "../Button/Button";
 import Axios from "axios";
 import getAPI from "../../util/util";
 import { Link } from "react-router-dom";
@@ -28,7 +30,7 @@ class Card extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="card__background">
         <div className="card__feed">
           <div className="card__container">
             <div
@@ -42,14 +44,21 @@ class Card extends Component {
               {this.props.caption}
             </div>
             <div className="card__container-links">
-              <div>
+              <div className="card-likes">
                 <div className="card__container-like">
                   <Like active={this.state.liked} onClick={this.clickHandle} />
                 </div>
-                <span>{this.state.numberOfLikes} Likes</span>
+                <div>{this.state.numberOfLikes} Likes</div>
               </div>
-              <Link to={`/pet/${this.props._id}`} >
-              <div className="card__container-more">See More Info</div>
+              <Link
+                to={{
+                  pathname: `/pet/${this.props._id}`,
+                  state: {
+                    petDetails: this.props
+                  }
+                }}
+              >
+                <Button label="See Post" type="lprimshad" />
               </Link>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import "./Form.css";
+import "../../Button/Button.css";
 import Form from "./Form";
 import Input from "./Input/Input";
 import Dropdown from "./Dropdown/Dropdown";
@@ -30,7 +31,7 @@ let dropdownComponents = [
 ];
 let buttonInfo = {
   label: "Submit",
-  type: "default"
+  type: "lprimshad"
 };
 let buttonComponent = <Button {...buttonInfo} />;
 

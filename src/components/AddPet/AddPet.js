@@ -8,6 +8,7 @@ import getAPI from "../../util/util";
 import axios from "axios";
 import "../../App.css";
 import "./AddPet.css";
+import ImageUploader from "react-images-upload";
 
 class AddPet extends Component {
   constructor(props) {
@@ -21,10 +22,17 @@ class AddPet extends Component {
       age: 0,
       breed: "",
       image: "",
+      pictures: [],
       caption: "",
-      numberOfLikes: 0,
-      submitted: false
+      numberOfLikes: 0
     };
+
+    this.onDrop = this.onDrop.bind(this);
+  }
+  onDrop(picture) {
+    this.setState({
+      pictures: this.state.pictures.concat(picture)
+    });
   }
   // define call back function to capture input
   getInput = e => {
@@ -49,13 +57,12 @@ class AddPet extends Component {
       onChange={this.getInput}
       name="caption"
     />,
-    <Input
-      key="Image"
-      label="Image URL"
-      type="small"
-      placeholder="Checkout imgur.com for hosting image files"
-      onChange={this.getInput}
-      name="image"
+    <ImageUploader
+      withIcon={true}
+      buttonText="Choose images"
+      onChange={this.onDrop}
+      imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+      maxFileSize={5242880}
     />
   ];
   dropdownComponents = () => {
@@ -107,7 +114,7 @@ class AddPet extends Component {
       />
     ];
   };
-  buttonComponent = (<Button label="Submit" type="default" />);
+  buttonComponent = (<Button label="Submit" type="lprimshad" />);
   onSubmit = e => {
     e.preventDefault();
     axios.post(`${getAPI()}pets`, {
@@ -116,7 +123,8 @@ class AddPet extends Component {
       age: parseInt(this.state.age),
       breed: this.state.breed,
       image: this.state.image,
-      caption: this.state.caption
+      caption: this.state.caption,
+      submitted: false
     });
     this.setState({ submitted: true });
   };
@@ -148,9 +156,11 @@ class AddPet extends Component {
       );
     } else {
       return (
-        <div>
-          Thanks for sumitting your pet!
-          <Link to="/">Click here to go back to feed</Link>
+        <div className="AddPet__success-container">
+          <div className="AddPet__success">
+            Thanks for submitting your pet!
+            <Link to="/">Click here to see your post.</Link>
+          </div>
         </div>
       );
     }

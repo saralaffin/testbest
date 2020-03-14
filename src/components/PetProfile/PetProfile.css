@@ -2,20 +2,11 @@
   font-family: "Roboto", sans-serif;
 }
 
-.card__feed {
-  max-height: 100%;
-  width: 620px;
-  display: grid;
-  margin: 0 auto;
-}
-.card__background {
+.pet__background {
   background-color: #fafafa;
 }
-/* .card {
-  margin: 40px;
-} */
 
-.card__container-image {
+.pet__container-image {
   border-radius: 5px 5px 0 0;
   width: 600px;
   height: 600px;
@@ -23,39 +14,38 @@
   background-size: cover;
 }
 
-.card__container {
+.pet__container {
   max-width: 600px;
-  max-height: 760px;
+  max-height: 900px;
   border-radius: 5px;
-  border: 1px solid black;
-  /* overflow-y: scroll; */
-  margin-top: 40px;
+  border: 1px solid #770f05;
+  margin: auto;
 }
 
-.card__container-username {
+.pet__container-username {
   font-weight: 900;
 }
 
-.card__container-caption {
+.pet__container-caption {
   padding: 15px 10px;
   font-size: 1.8vh;
 }
 
-.card__container-links {
+.pet__container-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 5%;
+  margin: 0 2%;
   align-items: center;
 }
 
-.card__container-like {
+.pet__container-like {
   height: 60px;
   width: 60px;
   align-items: center;
 }
 
-.card-likes {
+.pet-likes {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -63,8 +53,8 @@
   width: 50%;
 }
 
-.card__container-more {
-  background-color: black;
+.pet__container-more {
+  background-color: #770f05;
   color: white;
   font-size: 2vh;
   padding: 5px;
@@ -73,42 +63,62 @@
   text-align: center;
 }
 
+.pet__container-more-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  color: white;
+  margin-top: 5px;
+  background-color: #770f05;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #770f055b;
+}
+
+.pet__container-titles {
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 2vh;
+}
+
 @media only screen and (max-width: 414px) {
-  .card__feed {
+  .pet__container {
+    margin-top: 10px;
     max-height: 100%;
     width: 400px;
   }
-  .card__container-image {
+  .pet__container-image {
     width: 400px;
     height: 400px;
   }
 }
 @media only screen and (max-width: 375px) {
-  .card__feed {
+  .pet__container {
     width: 360px;
   }
-  .card__container-image {
+  .pet__container-image {
     width: 360px;
     height: 360px;
   }
 }
 
 @media only screen and (max-width: 360px) {
-  .card__feed {
+  .pet__container {
     max-height: 100%;
     width: 340px;
   }
-  .card__container-image {
+  .pet__container-image {
     width: 340px;
     height: 340px;
   }
 }
 
 @media only screen and (max-width: 321px) {
-  .card__feed {
+  .pet__container {
     width: 310px;
   }
-  .card__container-image {
+  .pet__container-image {
     width: 310px;
     height: 310px;
   }
